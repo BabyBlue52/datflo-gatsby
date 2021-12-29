@@ -1,0 +1,229 @@
+@import "~bulma/bulma.sass";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap');
+
+/***
+=======================
+    VARIABLES
+=======================
+***/
+
+$primary: 'Poppins', sans-serif;
+$body: 'Open Sans', sans-serif;
+
+$heavy: 700;
+
+$background: #FAF7F7;
+$black: #212121;
+$rose: #E33A32;
+
+$smooth: 350ms ease-in-out all;
+
+
+::selection {
+    background: rgba($rose, 0.33);
+}
+html, body {
+    overflow-x: hidden;
+    background: $background;
+    font-family: $body;
+    font-size: 0.9rem;   
+    scroll-behavior: smooth;
+}
+h1 {
+    font-family: $primary;
+    font-weight: $heavy;
+    font-size: 4rem;
+    color: $black;
+    line-height: 4rem;
+}
+h2 {
+    font-family: $primary;
+    font-size: 1.8rem;
+}
+p{ 
+    font-family: $primary;
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width:100vw;
+    height: 50px;
+    background: $background;
+    z-index: 9;
+}
+.lrg {
+    // min-width: 250px;
+    // min-height: 100px;
+    transform: scale(3);
+}
+.adjust-slider {
+    position: relative;
+    margin-top: -200px;
+    margin-bottom: 50px;
+}
+#layer0 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 0;
+    background: $background;
+    img.grid {
+        min-width: 500px;
+        min-height: 500px;
+        max-width: 500px;
+        max-height: 500px;
+        position: relative;
+        top: 200px;
+        left: 60%;
+        background: url('../images/grid.png');
+        background-size: contain;
+    }
+    .adjust {
+        position: relative;
+        top: -350px;
+    }
+    .adjust-down {
+        position: relative;
+        top: 300px;
+    }
+    .adjust-left {
+        position: relative;
+        left: 50px;
+    }
+    .border-0 {
+        border: 2px solid $rose;
+    }
+}
+.logo {
+    max-width: 250px;
+}
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+    svg {
+        margin: 0 15px;
+        transition: $smooth;
+        &:hover, &:active {
+            
+            fill: $red;
+            transition: $smooth;
+        }
+    }
+}
+.border {
+    border: 2px solid $black;
+}
+.mx-auto {
+    margin: 0 auto;
+}
+.super-block {
+    height: 80px;
+}
+
+.footer-nav {
+    color: $black;
+    padding-left: 5px;
+    .underline{
+        position: absolute;
+        top: 33px;
+        width: 0px;
+        margin-left: -85px;
+        background: $rose;
+        height: 3px;
+        z-index: 9;
+        transition: $smooth;
+        transform-origin: left center;
+    }
+    &:hover {
+        color: $black;
+        .underline {
+            width: 90px;
+            transition: $smooth;
+        }
+    }
+}
+
+.navbar-item {
+    .underline{
+        position: absolute;
+        left: 0;
+        top: 30px;
+        width: 0px;
+        background: $rose;
+        height: 3px;
+        z-index: 9;
+        transition: $smooth;
+        transform-origin: left center;
+    }
+    &:hover {
+        color: $black;
+        .underline {
+            width: 100%;
+            transition: $smooth;
+        }
+    }
+}
+
+// Buttons
+button.dtf-btn {
+    border: 2px solid $red;
+    background: transparent;
+    font-family: $primary;
+    border-radius: 5px;
+    padding: 5px 20px;
+    color: $rose;
+    transition: $smooth;
+    span {
+        color: inherit;
+    }
+    &:hover, &:focus {
+        background: $rose;
+        color: $background;
+        cursor: pointer;
+        transition: $smooth;
+    }
+}
+
+/* Bulma Edits */
+.navbar {
+    background: inherit;
+    padding-top: 20px;
+    .navbar-item {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        font-weight: $heavy;   
+        font-family: Poppins;
+        font-size: 1rem;
+        margin: 0 10px;
+        &:visited {
+            color: $black;
+        }
+    }
+    .navbar-brand {
+        margin-right: 20px;
+    }
+}
+
+.footer {
+    padding: 10px 0 0 0;
+    background: $background;
+}
+.touch { display: none; }
+@media only screen and (max-width: 1024px) {
+    .desktop {
+        display: none;
+    }
+    .touch {
+        display: block;
+    }
+}
+
+// Swiper 
+.swiper-slide {
+    display: flex; 
+    justify-content: center;
+}
