@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Mobile from "./components/Mobile";
@@ -7,9 +8,9 @@ import 'swiper/css';
 import "../pages/styles.scss";
 
 // links 
-const spotify = "https://www.spotify.com"
-const instagram = "https://www.instagram.com"
-const lofm = "https://www.lofifm.com"
+const spotify = "https://open.spotify.com/show/2Tuy4iQmpwWQpa3GR0bbyj?si=e3519ea8848c4b07"
+const instagram = "https://www.instagram.com/datflo.official/"
+const lofm = "https://lofifm.com"
 
 // header
 const Header = () =>{
@@ -77,27 +78,13 @@ const Footer = () => {
 
 // markup
 const IndexPage = () => {
-    const [width, setWidth] = useState(0);
-
-    useEffect(() => {
-      checkSize()
-    },[])
-
-    // Check Viewport
-  const checkSize = () => {
-    if(window.innerWidth < 1024) {
-      setWidth(1)
-    } else {
-      setWidth(2)
-    }
-  }
 
   // Slideshow
   const ImageSlider = () => {
     return (
       <div class="adjust-slider">
         <Swiper
-        slidesPerView={width}
+        slidesPerView={2}
         onSlideChange={() => 
           console.log('slide change')}
         scrollbar={{ draggable: true }}
@@ -117,11 +104,13 @@ const IndexPage = () => {
   return (
     <>
       {/** Begin Desktop Layout */}
-      <main class="dtf desktop">
-        <title>datFlo LLC</title>
+      <main class="desktop">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>datFlo LLC</title>
+        </Helmet>
         <Header />      
-      
-        {/** Begin Background Layer */}
+            {/** Begin Background Layer */}
         <div id="layer0">
           <div class="container ">
           <img class="grid"/>
@@ -164,6 +153,7 @@ const IndexPage = () => {
           </div>
         </div>
         {/** END Background Layer */}
+  
         
         {/** Begin Content  */}
         <div class="container is-fullhd">
@@ -193,7 +183,8 @@ const IndexPage = () => {
               <div class="section is-large">
                 <h2> Who are we</h2> 
                 <p>datFlo LLC is a young start-up company founded in 2020 for the purpose of building unique applications to streamline the ticket-buying expereince.</p>
-                <p> We believe that the concert-going expereince has been clogged with old-school service fees and transaction hurdles.</p>
+                <p>We believe that the concert-going expereince has been clogged with old-school service fees and transaction hurdles.</p>
+                <p>Our mission at datFlo LLC is to use blockchain and community-based consensus to change the way people consume live music.</p>
               </div>
             </div>
           </div>
@@ -230,7 +221,7 @@ const IndexPage = () => {
               // poster="./images/poster.png"
               >
                 <source src="https://res.cloudinary.com/dzaaowrv5/video/upload/v1639872015/advert-lo-res.mov" type="video/mp4" />
-                
+                <p>Please disable ad-blocker to view video</p>
               </video>  
               </div>
             </div>
