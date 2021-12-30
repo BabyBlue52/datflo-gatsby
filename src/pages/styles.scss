@@ -343,4 +343,9 @@ button.dtf-btn {
             }
         }
     }
+    @supports (-webkit-touch-callout: none) {
+        /* CSS specific to iOS devices */ 
+        max-width: 120px;
+        min-width: 120px;
+      }
 }
