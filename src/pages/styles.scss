@@ -147,7 +147,7 @@ footer {
     }
 }
 
-.navbar-item {
+a.navbar-item {
     .underline{
         position: absolute;
         left: 0;
@@ -160,7 +160,7 @@ footer {
         transform-origin: left center;
     }
     &:hover {
-        color: $black;
+        color: $black !important;
         .underline {
             width: 100%;
             transition: $smooth;
@@ -345,7 +345,9 @@ button.dtf-btn {
     }
     @supports (-webkit-touch-callout: none) {
         /* CSS specific to iOS devices */ 
-        max-width: 120px;
-        min-width: 120px;
+        .lrg { 
+            max-width: 120px;
+            min-width: 120px;
+        }
       }
 }
