@@ -163,6 +163,9 @@ const Mobile = () => {
             </div>
         </div>
         <div class="super-block"/>
+        <div class="container">
+            <p class="centered">&larr;<span>swipe</span>&rarr;</p>        
+        </div>
         <ImageSlider />
         
         <Footer/>
