@@ -11,7 +11,7 @@ import "../pages/styles.scss";
 const spotify = "https://open.spotify.com/show/2Tuy4iQmpwWQpa3GR0bbyj?si=e3519ea8848c4b07"
 const instagram = "https://www.instagram.com/datflo.official/"
 const lofm = "https://lofifm.com"
-const lofm-ad = "https://res.cloudinary.com/dzaaowrv5/video/upload/v1641505118/Lofm-advert.mp4"
+const advert = "https://res.cloudinary.com/dzaaowrv5/video/upload/v1641505118/Lofm-advert.mp4"
 
 // header
 const Header = () =>{
@@ -219,9 +219,9 @@ const IndexPage = () => {
             <div class="column is-5 ">
               <div class="section is-large"> 
               <video controls
-              // poster="./images/poster.png"
+              
               >
-                <source src={lofm-ad} type="video/mp4" />
+                <source src={advert} type="video/mp4" />
                 <p>Please disable ad-blocker to view video</p>
               </video>  
               </div>

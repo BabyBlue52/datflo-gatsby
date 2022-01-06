@@ -153,6 +153,21 @@ const Mobile = () => {
                     <h1>Lo.FM</h1>  
                     <StaticImage src="../images/lofm-logo.png" alt="lo.fm logo" class="lofm"/>
                     <div class="block"/>
+                 
+                </div>
+                <div class="block"/>
+                <div class="columns centered">
+                    <p class="section">
+                        An all-in-one chat platform for Lo-Fi lovers. Stream the latest uploads, create favorites list, with direct contact from the creators themselves.      
+                    </p>
+                    <div class="is-flex centered">
+                        <a href={lofm} target="_blank" rel="noreferrer">
+                            <button class="dtf-btn">
+                                <span> Check it out</span>   
+                            </button>
+                        </a>
+                    </div> 
+                    
                 </div>
             </div>
             
