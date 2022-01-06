@@ -10,6 +10,7 @@ import "../../pages/styles.scss";
 const spotify = "https://open.spotify.com/show/2Tuy4iQmpwWQpa3GR0bbyj?si=e3519ea8848c4b07"
 const instagram = "https://www.instagram.com/datflo.official/"
 const lofm = "https://lofifm.com"
+const advert = "https://res.cloudinary.com/dzaaowrv5/video/upload/v1641505118/Lofm-advert.mp4"
 
 const Header = () =>{
     return  (
@@ -157,7 +158,7 @@ const Mobile = () => {
             
             <div class="section is-flex centered" style={{"marginBottom":"-100px"}}> 
               <video controls >
-                <source src="https://res.cloudinary.com/dzaaowrv5/video/upload/v1639872015/advert-lo-res.mov" type="video/mp4" />
+                <source src={advert} type="video/mp4" />
                 <p>Please disable ad-blocker to view video</p>
               </video>  
             </div>
