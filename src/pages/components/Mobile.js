@@ -43,7 +43,7 @@ const Header = () =>{
                     </div>
                     </div>
                     <div class="column is-flex centered"> Reach out to us: 
-                    <a class="footer-nav" href="mailto:chris@datflo.company">
+                    <a class="footer-nav" href="mailto:mailto:info@datflo.io">
                         info@datflo.io
                     </a>
                     </div>

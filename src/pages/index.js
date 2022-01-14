@@ -54,7 +54,7 @@ const Footer = () => {
             <div class="level columns">
               <div class="column is-3"> 2021, datFlo LLC &nbsp; All Rights Reserved.</div>
               <div class="column is-3 has-text-centered"> Reach out to us: 
-                <a class="footer-nav" href="mailto:chris@datflo.company">
+                <a class="footer-nav" href="mailto:info@datflo.io">
                   info@datflo.io
                   <span class="underline"></span>
                 </a>
