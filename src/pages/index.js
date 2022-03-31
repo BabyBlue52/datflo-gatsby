@@ -48,11 +48,13 @@ const Header = () =>{
 
 // footer  
 const Footer = () => {
+  new Date().getFullYear();
+
   return (
         <footer class="footer">
           <div class="container is-max-widescreen">
             <div class="level columns">
-              <div class="column is-3"> 2021, datFlo LLC &nbsp; All Rights Reserved.</div>
+              <div class="column is-3"> <span id="year"></span>, datFlo LLC &nbsp; All Rights Reserved.</div>
               <div class="column is-3 has-text-centered"> Reach out to us: 
                 <a class="footer-nav" href="mailto:info@datflo.io">
                   info@datflo.io

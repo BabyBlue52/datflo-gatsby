@@ -27,6 +27,7 @@ const Header = () =>{
   }
 
   const Footer = () => {
+      new Date().getFullYear()
     return (
           <footer class="footer">
             <div class="container">
@@ -49,7 +50,7 @@ const Header = () =>{
                     </div>
                     
                     <div class="column has-text-centered"> 
-                        <small>2021, datFlo LLC &nbsp; All Rights Reserved.</small>
+                        <small><span id="year"></span>, datFlo LLC &nbsp; All Rights Reserved.</small>
                     </div> 
                 </div>
             </div>
