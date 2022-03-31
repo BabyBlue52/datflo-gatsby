@@ -12,6 +12,8 @@ const instagram = "https://www.instagram.com/datflo.official/"
 const lofm = "https://lofifm.com"
 const advert = "https://res.cloudinary.com/dzaaowrv5/video/upload/v1641505118/Lofm-advert.mp4"
 
+const currentYear = new Date().getFullYear();
+
 const Header = () =>{
     return  (
       <div class="header _dropShadow">
@@ -27,7 +29,6 @@ const Header = () =>{
   }
 
   const Footer = () => {
-      new Date().getFullYear()
     return (
           <footer class="footer">
             <div class="container">
@@ -50,7 +51,7 @@ const Header = () =>{
                     </div>
                     
                     <div class="column has-text-centered"> 
-                        <small><span id="year"></span>, datFlo LLC &nbsp; All Rights Reserved.</small>
+                        <small>{currentYear}, datFlo LLC &nbsp; All Rights Reserved.</small>
                     </div> 
                 </div>
             </div>

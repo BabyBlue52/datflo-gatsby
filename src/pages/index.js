@@ -13,6 +13,8 @@ const instagram = "https://www.instagram.com/datflo.official/"
 const lofm = "https://lofifm.com"
 const advert = "https://res.cloudinary.com/dzaaowrv5/video/upload/v1641505118/Lofm-advert.mp4"
 
+const currentYear = new Date().getFullYear();
+
 // header
 const Header = () =>{
   return  (
@@ -48,13 +50,13 @@ const Header = () =>{
 
 // footer  
 const Footer = () => {
-  new Date().getFullYear();
+  
 
   return (
         <footer class="footer">
           <div class="container is-max-widescreen">
             <div class="level columns">
-              <div class="column is-3"> <span id="year"></span>, datFlo LLC &nbsp; All Rights Reserved.</div>
+              <div class="column is-3"> {currentYear}, datFlo LLC &nbsp; All Rights Reserved.</div>
               <div class="column is-3 has-text-centered"> Reach out to us: 
                 <a class="footer-nav" href="mailto:info@datflo.io">
                   info@datflo.io
@@ -103,6 +105,7 @@ const IndexPage = () => {
       </div>
     )
   }
+  
 
   return (
     <>
