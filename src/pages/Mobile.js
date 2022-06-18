@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import 'swiper/css';
-import "../../pages/styles.scss";
+import "./styles.scss";
 
 // links 
 const spotify = "https://open.spotify.com/show/2Tuy4iQmpwWQpa3GR0bbyj?si=e3519ea8848c4b07"
