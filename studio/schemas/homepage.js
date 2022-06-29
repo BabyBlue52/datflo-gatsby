@@ -9,9 +9,10 @@ export default {
                 type: 'string'
             },
             {
-                name: 'body',
-                type: 'text',
-                title: 'Body'
+                title: 'Text', 
+                name: 'text',
+                type: 'array', 
+                of: [{type: 'block'}]
             }
         ]
 }

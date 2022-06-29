@@ -33,5 +33,13 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: `gatsby-source-sanity`,
+      options: {
+        projectId: `s08sn1n8`,
+        dataset: `production`,
+        token: process.env.SANITY_TOKEN
+      }
+    }
   ],
 };

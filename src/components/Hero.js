@@ -1,12 +1,24 @@
 import React from "react";
-
+import { useStaticQuery, graphql, useScrollRestoration } from "gatsby";
 const HeroSection = () => {
+    const data = useStaticQuery(graphql`
+    query title{
+        allSanityHomepageContent {
+            nodes {
+                label
+            }
+        }
+    }
+  `)
+
     return (
         <>
             <div class="columns">
                 <div class="column is-8 ">
                 <div class="section is-large">
                     <h1>Transparency driven <br/>technology company</h1>
+                    {/* Sanity Starter */}
+                    {/* <p>{data.allSanityHomepageContent.nodes[0].label}</p> */}
                 </div>
                 </div>
                 <div class="column ">

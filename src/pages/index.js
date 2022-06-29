@@ -8,7 +8,7 @@ import ProductDetails from "../components/ProductDetails";
 import ImageSlider from "../components/ImageSlider";
 import Footer from "../components/Footer";
 import Mobile from "./Mobile"
-import Header from "../components/Header";
+import Header from "../components/HeaderNav";
 
 import "./styles.scss";
 

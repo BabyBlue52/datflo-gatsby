@@ -15,10 +15,10 @@ const ImageSlider = () => {
         className="is-flex centered"
         > 
           <SwiperSlide>
-              <StaticImage src="../../images/videos-screen.png" alt="videos" className="mx-auto"/>
+              <StaticImage src="../images/videos-screen.png" alt="videos" className="mx-auto"/>
           </SwiperSlide>
           <SwiperSlide>
-              <StaticImage src="../../images/channel-screen.png" alt="channels"/>
+              <StaticImage src="../images/channel-screen.png" alt="channels"/>
           </SwiperSlide>
         </Swiper>
       </div>
