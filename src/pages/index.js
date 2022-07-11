@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image";
-import { graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 
 import HeroSection from "../components/Hero";
 import ProductDetails from "../components/ProductDetails";
@@ -14,10 +14,20 @@ import "./styles.scss";
 
 
 // markup
-const IndexPage = ({data}) => {
-  console.clear();
-  console.log({data});
-  
+const IndexPage = () => {
+  // const data = useStaticQuery(graphql`
+  //   query backgroundImages {
+  //     allSanityHomepageImages {
+  //       edges {
+  //         node {
+  //           image {
+  //             _key
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }  
+  // `)
 
   return (
     <>

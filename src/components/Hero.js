@@ -1,27 +1,31 @@
 import React from "react";
-import { useStaticQuery, graphql, useScrollRestoration } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 const HeroSection = () => {
     const data = useStaticQuery(graphql`
-    query title{
-        allSanityHomepageContent {
-            nodes {
-                label
+    query PageContent {
+        allSanityPageContent {
+          edges {
+            node {
+              id
+              label
+              pageContent
             }
+          }
         }
-    }
-  `)
+      }
+      
+    `)
 
     return (
         <>
             <div class="columns">
                 <div class="column is-8 ">
                 <div class="section is-large">
-                    <h1>Transparency driven <br/>technology company</h1>
                     {/* Sanity Starter */}
-                    {/* <p>{data.allSanityHomepageContent.nodes[0].label}</p> */}
+                    <h1>{data.allSanityPageContent.edges[0].node.pageContent}</h1>
                 </div>
                 </div>
-                <div class="column ">
+                <div class="column">
                     
                 </div>
             </div>
@@ -37,10 +41,8 @@ const HeroSection = () => {
                 <div class="column is-7 ">
                 <a id="who"></a>
                 <div class="section is-large">
-                    <h2> Who are we</h2> 
-                    <p>datFlo LLC is a young start-up company founded in 2020 for the purpose of building unique applications to streamline the ticket-buying expereince.</p>
-                    <p>We believe that the concert-going expereince has been clogged with old-school service fees and transaction hurdles.</p>
-                    <p>Our mission at datFlo LLC is to use blockchain and community-based consensus to change the way people consume live music.</p>
+                    <h2>{data.allSanityPageContent.edges[1].node.label}</h2> 
+                    <p>{data.allSanityPageContent.edges[1].node.pageContent}</p>
                 </div>
                 </div>
             </div>

@@ -38,7 +38,9 @@ module.exports = {
       options: {
         projectId: `s08sn1n8`,
         dataset: `production`,
-        token: process.env.SANITY_TOKEN
+        token: process.env.SANITY_TOKEN,
+        watchMode: 'production',
+        overlayDrafts: 'production'
       }
     }
   ],
