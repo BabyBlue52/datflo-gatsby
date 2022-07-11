@@ -22,7 +22,7 @@ const HeroSection = () => {
                 <div class="column is-8 ">
                 <div class="section is-large">
                     {/* Sanity Starter */}
-                    <h1>{data.allSanityPageContent.edges[0].node.pageContent}</h1>
+                    <h1>{data.allSanityPageContent.edges[1].node.pageContent}</h1>
                 </div>
                 </div>
                 <div class="column">
@@ -41,8 +41,8 @@ const HeroSection = () => {
                 <div class="column is-7 ">
                 <a id="who"></a>
                 <div class="section is-large">
-                    <h2>{data.allSanityPageContent.edges[1].node.label}</h2> 
-                    <p>{data.allSanityPageContent.edges[1].node.pageContent}</p>
+                    <h2>{data.allSanityPageContent.edges[0].node.label}</h2> 
+                    <p>{data.allSanityPageContent.edges[0].node.pageContent}</p>
                 </div>
                 </div>
             </div>
