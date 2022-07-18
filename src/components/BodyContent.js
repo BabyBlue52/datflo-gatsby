@@ -20,7 +20,7 @@ const BodyContent = ({ portableTextContent }) => {
         }
     }
 
-    const text = data.allSanityBody.nodes[1]._rawBodyContent
+    const text = data.allSanityBody.nodes[0]._rawBodyContent
     return (
     <div>
 
@@ -33,7 +33,7 @@ const BodyContent = ({ portableTextContent }) => {
                 <div class="column is-7 ">
                     <a id="who"></a>
                     <div class="section is-large">
-                        <h2>{data.allSanityBody.nodes[1].label}</h2> 
+                        <h2>{data.allSanityBody.nodes[0].label}</h2> 
                         {/* Sanity Studio does simply serialize this with Portable Text */}
                         <PortableText blocks={text} serializers={serializers}/>
                     </div>
