@@ -1,7 +1,7 @@
 export default {
-    name:'pageContent',
+    name:'headline',
     type: 'document',
-    title: 'Page Content',
+    title: 'Headline',
     fields: [
         {
             title:'Label',
@@ -9,8 +9,8 @@ export default {
             type: 'string'
         },
         {
-            title: 'Page Content',
-            name: 'pageContent',
+            title: 'Page Headline',
+            name: 'pageHeadline',
             type:'string'
         }
     ]

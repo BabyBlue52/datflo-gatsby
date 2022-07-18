@@ -42,6 +42,12 @@ module.exports = {
         watchMode: 'production',
         overlayDrafts: 'production'
       }
+    },
+    {
+      resolve: `gatsby-transform-portable-text`,
+      options: {
+        extendTypes: [{ typeName: `BodyContent`, contentFieldName: "body" }]
+      }
     }
   ],
 };

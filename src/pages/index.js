@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import { graphql, useStaticQuery } from 'gatsby';
 
 import HeroSection from "../components/Hero";
+import BodyContent from "../components/BodyContent";
 import ProductDetails from "../components/ProductDetails";
 import ImageSlider from "../components/ImageSlider";
 import Footer from "../components/Footer";
@@ -84,6 +85,7 @@ const IndexPage = () => {
         {/** END Background Layer */}
         <div id="layer1">
           <HeroSection/>
+          <BodyContent/>
           <ProductDetails/>
           <ImageSlider/>
           <Footer/>
@@ -98,13 +100,3 @@ const IndexPage = () => {
 }
 
 export default IndexPage
-
-// export const query = graphql`
-//   query {
-//     allSanitySocialLinks {
-//       nodes {
-//         url
-//         }
-//       }
-//   }
-// `

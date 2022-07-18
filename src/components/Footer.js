@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     const data = useStaticQuery(graphql`
-    query MyQuery {
+    query Footer {
       allSanitySocialLinks {
         edges {
           node {
